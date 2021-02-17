@@ -1,0 +1,176 @@
+2021-02-17 13:08:33,766 WARN  [SoapUI] Missing folder [D:\API testing\RestAssignment_Gunjit\my-app\ext] for external libraries
+2021-02-17 13:08:34,145 INFO  [DefaultSoapUICore] initialized soapui-settings from [C:\Users\Jasnoor Kaur\soapui-settings.xml]
+2021-02-17 13:08:36,066 INFO  [WsdlProject] Loaded project from [file:/D:/API%20testing/RestAssignment_Gunjit/my-app/REST-Project-1-soapui-project.xml]
+2021-02-17 13:08:37,119 INFO  [SoapUITestCaseRunner] Running SoapUI tests in project [SDETLPB8_Rest Project assignment]
+2021-02-17 13:08:37,122 INFO  [SoapUITestCaseRunner] Running Project [SDETLPB8_Rest Project assignment], runType = SEQUENTIAL
+2021-02-17 13:08:37,191 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [TC001_Create Access Token]
+2021-02-17 13:08:37,231 INFO  [SoapUITestCaseRunner] running step [GetAccessToken]
+2021-02-17 13:08:39,435 INFO  [log] HTTP status code: 200
+2021-02-17 13:08:39,450 INFO  [SoapUITestCaseRunner] Assertion [Valid HTTP Status Codes] has status VALID
+2021-02-17 13:08:39,450 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion] has status VALID
+2021-02-17 13:08:39,454 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [TC001_Create Access Token], time taken: 1025ms, status: FINISHED
+2021-02-17 13:08:39,464 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [TC002_Login and get admin account details]
+2021-02-17 13:08:39,466 INFO  [SoapUITestCaseRunner] running step [GetAccessToken]
+2021-02-17 13:08:39,987 INFO  [log] bearer 279f63c230fe91d65b78096b0711163a82073e37
+2021-02-17 13:08:40,046 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion] has status VALID
+2021-02-17 13:08:40,051 INFO  [SoapUITestCaseRunner] running step [Login]
+2021-02-17 13:08:40,471 INFO  [log] HTTP status code: 200
+2021-02-17 13:08:40,513 INFO  [log] Admin username is: upskills_admin
+2021-02-17 13:08:40,515 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion for status code] has status VALID
+2021-02-17 13:08:40,517 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion for username] has status VALID
+2021-02-17 13:08:40,521 INFO  [SoapUITestCaseRunner] running step [GetAdminUserAccountDetails]
+2021-02-17 13:08:40,927 INFO  [log] HTTP status code: 200
+2021-02-17 13:08:40,963 INFO  [log] Admin username is: upskills_admin
+2021-02-17 13:08:40,965 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion for status code] has status VALID
+2021-02-17 13:08:40,967 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion for admin username] has status VALID
+2021-02-17 13:08:40,968 INFO  [SoapUITestCaseRunner] running step [Logout]
+2021-02-17 13:08:41,913 INFO  [log] HTTP status code: 200
+2021-02-17 13:08:41,915 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion for status code] has status VALID
+2021-02-17 13:08:41,917 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [TC002_Login and get admin account details], time taken: 2025ms, status: FINISHED
+2021-02-17 13:08:41,922 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [TC008_Add new customer and modify]
+2021-02-17 13:08:41,923 INFO  [SoapUITestCaseRunner] running step [GetAccessToken]
+2021-02-17 13:08:42,340 INFO  [log] bearer 9f75343a27b3a801f1b5a465aec4a591bd4d336f
+2021-02-17 13:08:42,342 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion] has status VALID
+2021-02-17 13:08:42,346 INFO  [SoapUITestCaseRunner] running step [Login]
+2021-02-17 13:08:42,754 INFO  [log] HTTP status code: 200
+2021-02-17 13:08:42,786 INFO  [log] Admin username is: upskills_admin
+2021-02-17 13:08:42,788 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion] has status VALID
+2021-02-17 13:08:42,793 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion for username] has status VALID
+2021-02-17 13:08:42,795 INFO  [SoapUITestCaseRunner] running step [Properties]
+2021-02-17 13:08:42,881 INFO  [SoapUITestCaseRunner] running step [Add new customer]
+2021-02-17 13:08:43,992 INFO  [log] Customer ID of new added customer is: 3781
+2021-02-17 13:08:44,015 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion] has status VALID
+2021-02-17 13:08:44,016 INFO  [SoapUITestCaseRunner] running step [Get Customer by ID]
+2021-02-17 13:08:44,413 INFO  [SoapUITestCaseRunner] running step [Modify customer by ID]
+2021-02-17 13:08:44,793 INFO  [SoapUITestCaseRunner] running step [Get Customer by ID after modification]
+2021-02-17 13:08:45,287 INFO  [log] HTTP status code: 200
+2021-02-17 13:08:45,318 INFO  [log] Firstname is: Demo66687878
+2021-02-17 13:08:45,320 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion for status code] has status VALID
+2021-02-17 13:08:45,323 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion for customer_id] has status UNKNOWN
+2021-02-17 13:08:45,326 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion for firstname] has status VALID
+2021-02-17 13:08:45,327 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [TC008_Add new customer and modify], time taken: 2420ms, status: FINISHED
+2021-02-17 13:08:45,331 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [TC004_Data driven testing]
+2021-02-17 13:08:45,333 INFO  [SoapUITestCaseRunner] running step [Groovy Script]
+2021-02-17 13:08:46,312 INFO  [log] total number of rows containing data are 6
+2021-02-17 13:08:46,392 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [TC008_Add new customer and modify]
+2021-02-17 13:08:46,403 INFO  [SoapUITestCaseRunner] running step [GetAccessToken]
+2021-02-17 13:08:46,809 INFO  [log] bearer 103dbe88f8e4ed419e1e0ac0f972060ee456da82
+2021-02-17 13:08:46,814 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion] has status VALID
+2021-02-17 13:08:46,816 INFO  [SoapUITestCaseRunner] running step [Login]
+2021-02-17 13:08:47,251 INFO  [log] HTTP status code: 200
+2021-02-17 13:08:47,255 INFO  [log] Admin username is: upskills_admin
+2021-02-17 13:08:47,257 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion] has status VALID
+2021-02-17 13:08:47,259 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion for username] has status VALID
+2021-02-17 13:08:47,262 INFO  [SoapUITestCaseRunner] running step [Properties]
+2021-02-17 13:08:47,266 INFO  [SoapUITestCaseRunner] running step [Add new customer]
+2021-02-17 13:08:47,645 INFO  [log] Customer ID of new added customer is: 3782
+2021-02-17 13:08:47,647 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion] has status VALID
+2021-02-17 13:08:47,647 INFO  [SoapUITestCaseRunner] running step [Get Customer by ID]
+2021-02-17 13:08:48,035 INFO  [SoapUITestCaseRunner] running step [Modify customer by ID]
+2021-02-17 13:08:48,411 INFO  [SoapUITestCaseRunner] running step [Get Customer by ID after modification]
+2021-02-17 13:08:48,781 INFO  [log] HTTP status code: 200
+2021-02-17 13:08:48,799 INFO  [log] Firstname is: Demo66687878
+2021-02-17 13:08:48,802 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion for status code] has status VALID
+2021-02-17 13:08:48,806 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion for customer_id] has status UNKNOWN
+2021-02-17 13:08:48,810 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion for firstname] has status VALID
+2021-02-17 13:08:48,810 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [TC008_Add new customer and modify], time taken: 2292ms, status: FINISHED
+2021-02-17 13:08:48,825 INFO  [log] Status =FINISHED, time taken to complete the execution is 2292 ms
+2021-02-17 13:08:48,873 INFO  [log] number of test steps executed are 7
+2021-02-17 13:08:48,873 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [TC008_Add new customer and modify]
+2021-02-17 13:08:48,881 INFO  [SoapUITestCaseRunner] running step [GetAccessToken]
+2021-02-17 13:08:49,256 INFO  [log] bearer ed13c27a31f04cedf7cdc9125b63daf81d7de495
+2021-02-17 13:08:49,257 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion] has status VALID
+2021-02-17 13:08:49,258 INFO  [SoapUITestCaseRunner] running step [Login]
+2021-02-17 13:08:49,632 INFO  [log] HTTP status code: 200
+2021-02-17 13:08:49,635 INFO  [log] Admin username is: upskills_admin
+2021-02-17 13:08:49,635 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion] has status VALID
+2021-02-17 13:08:49,640 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion for username] has status VALID
+2021-02-17 13:08:49,641 INFO  [SoapUITestCaseRunner] running step [Properties]
+2021-02-17 13:08:49,642 INFO  [SoapUITestCaseRunner] running step [Add new customer]
+2021-02-17 13:08:50,051 INFO  [log] Customer ID of new added customer is: 3783
+2021-02-17 13:08:50,052 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion] has status VALID
+2021-02-17 13:08:50,055 INFO  [SoapUITestCaseRunner] running step [Get Customer by ID]
+2021-02-17 13:08:50,429 INFO  [SoapUITestCaseRunner] running step [Modify customer by ID]
+2021-02-17 13:08:50,814 INFO  [SoapUITestCaseRunner] running step [Get Customer by ID after modification]
+2021-02-17 13:08:51,241 INFO  [log] HTTP status code: 200
+2021-02-17 13:08:51,243 INFO  [log] Firstname is: Demo66687878
+2021-02-17 13:08:51,245 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion for status code] has status VALID
+2021-02-17 13:08:51,246 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion for customer_id] has status UNKNOWN
+2021-02-17 13:08:51,249 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion for firstname] has status VALID
+2021-02-17 13:08:51,251 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [TC008_Add new customer and modify], time taken: 2296ms, status: FINISHED
+2021-02-17 13:08:51,252 INFO  [log] Status =FINISHED, time taken to complete the execution is 2296 ms
+2021-02-17 13:08:51,253 INFO  [log] number of test steps executed are 7
+2021-02-17 13:08:51,257 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [TC008_Add new customer and modify]
+2021-02-17 13:08:51,262 INFO  [SoapUITestCaseRunner] running step [GetAccessToken]
+2021-02-17 13:08:51,740 INFO  [log] bearer c1a1b37d35e49955d12a900dbeb8b72773bb6364
+2021-02-17 13:08:51,743 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion] has status VALID
+2021-02-17 13:08:51,750 INFO  [SoapUITestCaseRunner] running step [Login]
+2021-02-17 13:08:52,125 INFO  [log] HTTP status code: 200
+2021-02-17 13:08:52,126 INFO  [log] Admin username is: upskills_admin
+2021-02-17 13:08:52,129 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion] has status VALID
+2021-02-17 13:08:52,133 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion for username] has status VALID
+2021-02-17 13:08:52,136 INFO  [SoapUITestCaseRunner] running step [Properties]
+2021-02-17 13:08:52,139 INFO  [SoapUITestCaseRunner] running step [Add new customer]
+2021-02-17 13:08:52,514 INFO  [log] Customer ID of new added customer is: 3784
+2021-02-17 13:08:52,516 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion] has status VALID
+2021-02-17 13:08:52,517 INFO  [SoapUITestCaseRunner] running step [Get Customer by ID]
+2021-02-17 13:08:52,902 INFO  [SoapUITestCaseRunner] running step [Modify customer by ID]
+2021-02-17 13:08:53,276 INFO  [SoapUITestCaseRunner] running step [Get Customer by ID after modification]
+2021-02-17 13:08:53,649 INFO  [log] HTTP status code: 200
+2021-02-17 13:08:53,650 INFO  [log] Firstname is: Demo66687878
+2021-02-17 13:08:53,653 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion for status code] has status VALID
+2021-02-17 13:08:53,654 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion for customer_id] has status UNKNOWN
+2021-02-17 13:08:53,657 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion for firstname] has status VALID
+2021-02-17 13:08:53,659 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [TC008_Add new customer and modify], time taken: 2312ms, status: FINISHED
+2021-02-17 13:08:53,660 INFO  [log] Status =FINISHED, time taken to complete the execution is 2312 ms
+2021-02-17 13:08:53,661 INFO  [log] number of test steps executed are 7
+2021-02-17 13:08:53,664 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [TC008_Add new customer and modify]
+2021-02-17 13:08:53,666 INFO  [SoapUITestCaseRunner] running step [GetAccessToken]
+2021-02-17 13:08:54,068 INFO  [log] bearer 18f96fb4dd765fa565bde829e1747238f9d76799
+2021-02-17 13:08:54,072 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion] has status VALID
+2021-02-17 13:08:54,073 INFO  [SoapUITestCaseRunner] running step [Login]
+2021-02-17 13:08:54,500 INFO  [log] HTTP status code: 200
+2021-02-17 13:08:54,502 INFO  [log] Admin username is: upskills_admin
+2021-02-17 13:08:54,508 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion] has status VALID
+2021-02-17 13:08:54,509 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion for username] has status VALID
+2021-02-17 13:08:54,513 INFO  [SoapUITestCaseRunner] running step [Properties]
+2021-02-17 13:08:54,515 INFO  [SoapUITestCaseRunner] running step [Add new customer]
+2021-02-17 13:08:54,885 INFO  [log] Customer ID of new added customer is: 3785
+2021-02-17 13:08:54,886 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion] has status VALID
+2021-02-17 13:08:54,887 INFO  [SoapUITestCaseRunner] running step [Get Customer by ID]
+2021-02-17 13:08:55,268 INFO  [SoapUITestCaseRunner] running step [Modify customer by ID]
+2021-02-17 13:08:55,638 INFO  [SoapUITestCaseRunner] running step [Get Customer by ID after modification]
+2021-02-17 13:08:56,018 INFO  [log] HTTP status code: 200
+2021-02-17 13:08:56,021 INFO  [log] Firstname is: Demo66687878
+2021-02-17 13:08:56,027 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion for status code] has status VALID
+2021-02-17 13:08:56,029 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion for customer_id] has status UNKNOWN
+2021-02-17 13:08:56,033 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion for firstname] has status VALID
+2021-02-17 13:08:56,034 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [TC008_Add new customer and modify], time taken: 2281ms, status: FINISHED
+2021-02-17 13:08:56,038 INFO  [log] Status =FINISHED, time taken to complete the execution is 2281 ms
+2021-02-17 13:08:56,040 INFO  [log] number of test steps executed are 7
+2021-02-17 13:08:56,040 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [TC008_Add new customer and modify]
+2021-02-17 13:08:56,042 INFO  [SoapUITestCaseRunner] running step [GetAccessToken]
+2021-02-17 13:08:56,408 INFO  [log] bearer f0f0173e9dacf0ff575a6b24f107fc0089930ea3
+2021-02-17 13:08:56,410 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion] has status VALID
+2021-02-17 13:08:56,415 INFO  [SoapUITestCaseRunner] running step [Login]
+2021-02-17 13:08:56,785 INFO  [log] HTTP status code: 200
+2021-02-17 13:08:56,788 INFO  [log] Admin username is: upskills_admin
+2021-02-17 13:08:56,791 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion] has status VALID
+2021-02-17 13:08:56,791 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion for username] has status VALID
+2021-02-17 13:08:56,795 INFO  [SoapUITestCaseRunner] running step [Properties]
+2021-02-17 13:08:56,797 INFO  [SoapUITestCaseRunner] running step [Add new customer]
+2021-02-17 13:08:57,173 INFO  [log] Customer ID of new added customer is: 3786
+2021-02-17 13:08:57,174 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion] has status VALID
+2021-02-17 13:08:57,174 INFO  [SoapUITestCaseRunner] running step [Get Customer by ID]
+2021-02-17 13:08:57,547 INFO  [SoapUITestCaseRunner] running step [Modify customer by ID]
+2021-02-17 13:08:57,921 INFO  [SoapUITestCaseRunner] running step [Get Customer by ID after modification]
+2021-02-17 13:08:58,400 INFO  [log] HTTP status code: 200
+2021-02-17 13:08:58,402 INFO  [log] Firstname is: Demo66687878
+2021-02-17 13:08:58,404 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion for status code] has status VALID
+2021-02-17 13:08:58,406 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion for customer_id] has status UNKNOWN
+2021-02-17 13:08:58,408 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion for firstname] has status VALID
+2021-02-17 13:08:58,411 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [TC008_Add new customer and modify], time taken: 2290ms, status: FINISHED
+2021-02-17 13:08:58,413 INFO  [log] Status =FINISHED, time taken to complete the execution is 2290 ms
+2021-02-17 13:08:58,416 INFO  [log] number of test steps executed are 7
+2021-02-17 13:08:58,416 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [TC004_Data driven testing], time taken: 13079ms, status: FINISHED
+2021-02-17 13:08:58,420 INFO  [SoapUITestCaseRunner] Project [SDETLPB8_Rest Project assignment] finished with status [FINISHED] in 21290ms

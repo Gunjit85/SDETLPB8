@@ -1,0 +1,54 @@
+2021-02-17 13:08:39,435 INFO  [log] HTTP status code: 200
+2021-02-17 13:08:39,987 INFO  [log] bearer 279f63c230fe91d65b78096b0711163a82073e37
+2021-02-17 13:08:40,471 INFO  [log] HTTP status code: 200
+2021-02-17 13:08:40,513 INFO  [log] Admin username is: upskills_admin
+2021-02-17 13:08:40,927 INFO  [log] HTTP status code: 200
+2021-02-17 13:08:40,963 INFO  [log] Admin username is: upskills_admin
+2021-02-17 13:08:41,913 INFO  [log] HTTP status code: 200
+2021-02-17 13:08:42,340 INFO  [log] bearer 9f75343a27b3a801f1b5a465aec4a591bd4d336f
+2021-02-17 13:08:42,754 INFO  [log] HTTP status code: 200
+2021-02-17 13:08:42,786 INFO  [log] Admin username is: upskills_admin
+2021-02-17 13:08:43,992 INFO  [log] Customer ID of new added customer is: 3781
+2021-02-17 13:08:45,287 INFO  [log] HTTP status code: 200
+2021-02-17 13:08:45,318 INFO  [log] Firstname is: Demo66687878
+2021-02-17 13:08:46,312 INFO  [log] total number of rows containing data are 6
+2021-02-17 13:08:46,809 INFO  [log] bearer 103dbe88f8e4ed419e1e0ac0f972060ee456da82
+2021-02-17 13:08:47,251 INFO  [log] HTTP status code: 200
+2021-02-17 13:08:47,255 INFO  [log] Admin username is: upskills_admin
+2021-02-17 13:08:47,645 INFO  [log] Customer ID of new added customer is: 3782
+2021-02-17 13:08:48,781 INFO  [log] HTTP status code: 200
+2021-02-17 13:08:48,799 INFO  [log] Firstname is: Demo66687878
+2021-02-17 13:08:48,825 INFO  [log] Status =FINISHED, time taken to complete the execution is 2292 ms
+2021-02-17 13:08:48,873 INFO  [log] number of test steps executed are 7
+2021-02-17 13:08:49,256 INFO  [log] bearer ed13c27a31f04cedf7cdc9125b63daf81d7de495
+2021-02-17 13:08:49,632 INFO  [log] HTTP status code: 200
+2021-02-17 13:08:49,635 INFO  [log] Admin username is: upskills_admin
+2021-02-17 13:08:50,051 INFO  [log] Customer ID of new added customer is: 3783
+2021-02-17 13:08:51,241 INFO  [log] HTTP status code: 200
+2021-02-17 13:08:51,243 INFO  [log] Firstname is: Demo66687878
+2021-02-17 13:08:51,252 INFO  [log] Status =FINISHED, time taken to complete the execution is 2296 ms
+2021-02-17 13:08:51,253 INFO  [log] number of test steps executed are 7
+2021-02-17 13:08:51,740 INFO  [log] bearer c1a1b37d35e49955d12a900dbeb8b72773bb6364
+2021-02-17 13:08:52,125 INFO  [log] HTTP status code: 200
+2021-02-17 13:08:52,126 INFO  [log] Admin username is: upskills_admin
+2021-02-17 13:08:52,514 INFO  [log] Customer ID of new added customer is: 3784
+2021-02-17 13:08:53,649 INFO  [log] HTTP status code: 200
+2021-02-17 13:08:53,650 INFO  [log] Firstname is: Demo66687878
+2021-02-17 13:08:53,660 INFO  [log] Status =FINISHED, time taken to complete the execution is 2312 ms
+2021-02-17 13:08:53,661 INFO  [log] number of test steps executed are 7
+2021-02-17 13:08:54,068 INFO  [log] bearer 18f96fb4dd765fa565bde829e1747238f9d76799
+2021-02-17 13:08:54,500 INFO  [log] HTTP status code: 200
+2021-02-17 13:08:54,502 INFO  [log] Admin username is: upskills_admin
+2021-02-17 13:08:54,885 INFO  [log] Customer ID of new added customer is: 3785
+2021-02-17 13:08:56,018 INFO  [log] HTTP status code: 200
+2021-02-17 13:08:56,021 INFO  [log] Firstname is: Demo66687878
+2021-02-17 13:08:56,038 INFO  [log] Status =FINISHED, time taken to complete the execution is 2281 ms
+2021-02-17 13:08:56,040 INFO  [log] number of test steps executed are 7
+2021-02-17 13:08:56,408 INFO  [log] bearer f0f0173e9dacf0ff575a6b24f107fc0089930ea3
+2021-02-17 13:08:56,785 INFO  [log] HTTP status code: 200
+2021-02-17 13:08:56,788 INFO  [log] Admin username is: upskills_admin
+2021-02-17 13:08:57,173 INFO  [log] Customer ID of new added customer is: 3786
+2021-02-17 13:08:58,400 INFO  [log] HTTP status code: 200
+2021-02-17 13:08:58,402 INFO  [log] Firstname is: Demo66687878
+2021-02-17 13:08:58,413 INFO  [log] Status =FINISHED, time taken to complete the execution is 2290 ms
+2021-02-17 13:08:58,416 INFO  [log] number of test steps executed are 7

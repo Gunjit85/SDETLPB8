@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="7fca45f4-8b0f-4bb5-8c62-d821f0806b91" activeEnvironment="Default" name="SDETLPB8_Rest Project assignment" soapui-version="5.6.0" abortOnError="false" runType="SEQUENTIAL" resourceRoot="" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:RestService" id="e57187d3-629e-49bf-bce0-3f8a0e7b2b6a" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://rest-api.upskills.in" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://rest-api.upskills.in</con:endpoint></con:endpoints><con:resource name="Client_credentials" path="/api/rest_admin/oauth2/token/client_credentials" id="c0582587-f2ae-486b-b04f-fba3800388f3"><con:settings/><con:parameters/><con:method name="GetAccessToken" id="50f026c0-11b3-4489-a656-30b96b276b24" method="POST"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>400 405</con:status><con:params/><con:element xmlns:cli="http://rest-api.upskills.in/api/rest_admin/oauth2/token/client_credentials">cli:Fault</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:cli="http://rest-api.upskills.in/api/rest_admin/oauth2/token/client_credentials">cli:Response</con:element></con:representation><con:request name="Request 1" id="9d8da129-cfb8-4edb-ac68-ef1fe08bbd5d" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="Basic dXBza2lsbHNfcmVzdF9hZG1pbl9vYXV0aF9jbGllbnQ6dXBza2lsbHNfcmVzdF9hZG1pbl9vYXV0aF9zZWNyZXQ=" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>http://rest-api.upskills.in</con:endpoint><con:request/><con:originalUri>http://rest-api.upskills.in/api/rest_admin/oauth2/token/client_credentials</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="45d57521-51b4-4ec8-86fc-d6c36cb77b14" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://rest-api.upskills.in" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://rest-api.upskills.in</con:endpoint></con:endpoints><con:resource name="Login" path="/api/rest_admin/login" id="42a99116-0400-42ae-a511-ffab8b92859c"><con:settings/><con:parameters/><con:method name="Login" id="53312d44-b952-4eab-856c-54c494280370" method="POST"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:log="http://rest-api.upskills.in/api/rest_admin/login">log:Response</con:element></con:representation><con:request name="Request 1" id="205d9fb2-3d60-4bf7-9da8-b70c8b0091ff" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="Bearer 49e8b0c20af5a1f3797e96b0c7be5d8858de367c" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>http://rest-api.upskills.in</con:endpoint><con:request>{
+  "username": "upskills_admin",
+  "password": "Talent4$$"
+}</con:request><con:originalUri>http://rest-api.upskills.in/api/rest_admin/login</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="8d2bacae-fb6d-41cb-9e20-bd642f0dea94" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://rest-api.upskills.in" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://rest-api.upskills.in</con:endpoint></con:endpoints><con:resource name="User" path="/api/rest_admin/user" id="05c649d4-2ddd-4df4-ad8a-88a04bebc2c5"><con:settings/><con:parameters/><con:method name="Get User Account details" id="e60567fc-2706-48f6-b545-1d9239e8dc24" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:user="http://rest-api.upskills.in/api/rest_admin/user">user:Response</con:element></con:representation><con:request name="Request 1" id="972548f9-b4ab-462b-9fb0-617093d07912" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="Bearer 49e8b0c20af5a1f3797e96b0c7be5d8858de367c" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>http://rest-api.upskills.in</con:endpoint><con:request/><con:originalUri>http://rest-api.upskills.in/api/rest_admin/user</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="14c196c3-240a-4a47-8834-afe078e61408" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://rest-api.upskills.in" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://rest-api.upskills.in</con:endpoint></con:endpoints><con:resource name="Logout" path="/api/rest_admin/logout" id="c769ea0e-d6e9-4ed4-9ad8-86b4fb457432"><con:settings/><con:parameters/><con:method name="Logout" id="93822053-f92c-421d-bd9d-1320a505f6a9" method="POST"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:log="http://rest-api.upskills.in/api/rest_admin/logout">log:Response</con:element></con:representation><con:request name="Request 1" id="dabad1fd-dda9-499b-86a6-d35c0ee90510" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="Bearer 49e8b0c20af5a1f3797e96b0c7be5d8858de367c" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>http://rest-api.upskills.in</con:endpoint><con:request/><con:originalUri>http://rest-api.upskills.in/api/rest_admin/logout</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="41c77867-66d9-4a81-9a11-aeb9ca8f71ec" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://rest-api.upskills.in" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://rest-api.upskills.in</con:endpoint></con:endpoints><con:resource name="Customers" path="/api/rest_admin/customers" id="6e16b5a3-b8d4-477b-a5f9-ea83c7a39842"><con:settings/><con:parameters/><con:method name="Add New customer" id="fea5c50b-378a-4b94-8a71-f2219a418f61" method="POST"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>403 400 401</con:status><con:params/><con:element xmlns:cus="http://rest-api.upskills.in/api/rest_admin/customers">cus:Fault</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:cus="http://rest-api.upskills.in/api/rest_admin/customers">cus:Response</con:element></con:representation><con:request name="Request 1" id="e0dfda54-1558-46de-a732-975dadc9d287" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="Bearer 49e8b0c20af5a1f3797e96b0c7be5d8858de367c" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>http://rest-api.upskills.in</con:endpoint><con:request>{
+"firstname": "Demo",
+"lastname": "User01",
+"email": "demouser222@gmail.com",
+"password": "password",
+"confirm": "password", 
+"telephone": "1-541-754-3010"
+}</con:request><con:originalUri>http://rest-api.upskills.in/api/rest_admin/customers</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="1943a2f2-7bdf-42a0-819a-754dc659c2ec" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://rest-api.upskills.in" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://rest-api.upskills.in</con:endpoint></con:endpoints><con:resource name="$" path="/api/rest_admin/customers/${#Project#CustomerID}" id="49b1161d-638a-4d9d-8c10-8627bd2b07e8"><con:settings/><con:parameters/><con:method name="GetCustomerByID" id="ff9681a6-f58f-462b-a541-61e95b5003ff" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:ns="http://rest-api.upskills.in/api/rest_admin/customers/3733">ns:Response</con:element></con:representation><con:request name="Request 1" id="0df27849-94b9-4f9c-b3bb-7156257412fe" mediaType="application/json"><con:settings/><con:endpoint>http://rest-api.upskills.in</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="b1bdae69-762d-4fa6-be21-eb8ce0f65068" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://rest-api.upskills.in" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>http://rest-api.upskills.in</con:endpoint></con:endpoints><con:resource name="$" path="/api/rest_admin/customers/${#Project#CustomerID}" id="f55140c0-50d5-432d-99e5-c4769ce534dd"><con:settings/><con:parameters/><con:method name="ModifyCustomerByID" id="249bcb1c-9d54-4e7d-a822-963904bb6ae9" method="PUT"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>401 400</con:status><con:params/><con:element xmlns:ns="http://rest-api.upskills.in/api/rest_admin/customers/3733">ns:Fault</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:ns="http://rest-api.upskills.in/api/rest_admin/customers/3733">ns:Response</con:element></con:representation><con:representation type="FAULT"><con:mediaType>text/html; charset=UTF-8</con:mediaType><con:status>500</con:status><con:params/></con:representation><con:request name="Request 1" id="63b60fcf-29bf-44e8-ba34-44f3212bbae7" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://rest-api.upskills.in</con:endpoint><con:request>{
+"firstname": "DemoNew",
+"lastname": "User01",
+"email": "demouser2225@gmail.com",
+"password": "password",
+"confirm": "password", 
+"telephone": "1-541-754-3010"
+}</con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:testSuite id="4b59d7cf-5099-4338-ba7d-fa33a6169bdc" name="RestProjectAssignment"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="8e38e319-9123-4fd3-8de7-2b9d0356640b" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TC001_Create Access Token" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="GetAccessToken" id="80df782e-8ef1-4a92-8244-b872d68e0f87"><con:settings/><con:config service="http://rest-api.upskills.in" resourcePath="/api/rest_admin/oauth2/token/client_credentials" methodName="GetAccessToken" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="GetAccessToken" id="9d8da129-cfb8-4edb-ac68-ef1fe08bbd5d" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="Basic dXBza2lsbHNfcmVzdF9hZG1pbl9vYXV0aF9jbGllbnQ6dXBza2lsbHNfcmVzdF9hZG1pbl9vYXV0aF9zZWNyZXQ=" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>http://rest-api.upskills.in</con:endpoint><con:request/><con:originalUri>http://rest-api.upskills.in/api/rest_admin/oauth2/token/client_credentials</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="a9e509cd-ab2c-4f92-9c43-ab9242af6daa" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="711177a9-c93a-4f10-9a88-c56ab28f007a" name="Script Assertion"><con:configuration><scriptText>def httpStatus = messageExchange.responseHeaders["#status#"]
+def httpStatusCode = (httpStatus =~ "[1-5]\\d\\d")[0]
+log.info("HTTP status code: " + httpStatusCode)
+def condition = httpStatusCode.equals("200")
+
+//log.info.condition
+
+assert condition
+
+//def http_status = messageExchange.responseHeaders["#status#"][0]
+//assert http_status.contains("200")
+
+//log.info.http_status</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="62ae33a1-7b3f-42f8-b177-b718e620564f" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TC002_Login and get admin account details" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="GetAccessToken" id="baa957ac-54a7-4ecd-b0d0-c4457b799342"><con:settings/><con:config service="http://rest-api.upskills.in" resourcePath="/api/rest_admin/oauth2/token/client_credentials" methodName="GetAccessToken" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="GetAccessToken" id="9d8da129-cfb8-4edb-ac68-ef1fe08bbd5d" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="Basic dXBza2lsbHNfcmVzdF9hZG1pbl9vYXV0aF9jbGllbnQ6dXBza2lsbHNfcmVzdF9hZG1pbl9vYXV0aF9zZWNyZXQ=" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>http://rest-api.upskills.in</con:endpoint><con:request/><con:originalUri>http://rest-api.upskills.in/api/rest_admin/oauth2/token/client_credentials</con:originalUri><con:assertion type="GroovyScriptAssertion" id="872d2ad6-7396-4686-bfd1-49e1da49ae16" name="Script Assertion"><con:configuration><scriptText>import groovy.json.JsonSlurper
+
+def response = messageExchange.response.responseContent
+
+def jsonData = new JsonSlurper().parseText(response)
+
+def accessToken = jsonData.data.access_token
+
+def completeAccessToken = "bearer "+accessToken
+
+log.info completeAccessToken
+
+context.testCase.testSuite.setPropertyValue("AccessToken",completeAccessToken)</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Login" id="78df78c1-ea55-4aa4-ac96-8176045d1e1a"><con:settings/><con:config service="http://rest-api.upskills.in" resourcePath="/api/rest_admin/login" methodName="Login" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Login" id="205d9fb2-3d60-4bf7-9da8-b70c8b0091ff" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="${#TestSuite#AccessToken}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>http://rest-api.upskills.in</con:endpoint><con:request>{
+  "username": "upskills_admin",
+  "password": "Talent4$$"
+}</con:request><con:originalUri>http://rest-api.upskills.in/api/rest_admin/login</con:originalUri><con:assertion type="GroovyScriptAssertion" id="84b025c1-f482-4160-80a2-99d96c353fc2" name="Script Assertion for status code"><con:configuration><scriptText>def httpStatus = messageExchange.responseHeaders["#status#"]
+def httpStatusCode = (httpStatus =~ "[1-5]\\d\\d")[0]
+log.info("HTTP status code: " + httpStatusCode)
+def condition = httpStatusCode.equals("200")
+
+assert condition
+
+
+</scriptText></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="b625669b-020e-44cc-84d2-637795fdc24b" name="Script Assertion for username"><con:configuration><scriptText>import groovy.json.JsonSlurper
+
+def response = messageExchange.response.responseContent
+
+def jsonData = new JsonSlurper().parseText(response)
+
+def userName = jsonData.data.username
+
+log.info ("Admin username is: "+userName)
+
+def condition = userName.equals("upskills_admin")
+
+assert condition
+</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="GetAdminUserAccountDetails" id="06a52a02-4f89-4c27-9f34-4cfbc2b02eef"><con:settings/><con:config service="http://rest-api.upskills.in" resourcePath="/api/rest_admin/user" methodName="Get User Account details" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="GetAdminUserAccountDetails" id="972548f9-b4ab-462b-9fb0-617093d07912" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="${#TestSuite#AccessToken}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>http://rest-api.upskills.in</con:endpoint><con:request/><con:originalUri>http://rest-api.upskills.in/api/rest_admin/user</con:originalUri><con:assertion type="GroovyScriptAssertion" id="c8912f79-0abe-4197-b633-2a5b97fc2cb8" name="Script Assertion for status code"><con:configuration><scriptText>def httpStatus = messageExchange.responseHeaders["#status#"]
+def httpStatusCode = (httpStatus =~ "[1-5]\\d\\d")[0]
+log.info("HTTP status code: " + httpStatusCode)
+def condition = httpStatusCode.equals("200")
+
+assert condition</scriptText></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="ce923d12-9ff7-46e3-8496-594c459be9eb" name="Script Assertion for admin username"><con:configuration><scriptText>import groovy.json.JsonSlurper
+
+def response = messageExchange.response.responseContent
+
+def jsonData = new JsonSlurper().parseText(response)
+
+def userName = jsonData.data.username
+
+log.info ("Admin username is: "+userName)
+
+def condition = userName.equals("upskills_admin")
+
+assert condition</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Logout" id="a377d3f3-4598-40b9-8966-0461cd7bea68"><con:settings/><con:config service="http://rest-api.upskills.in" resourcePath="/api/rest_admin/logout" methodName="Logout" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Logout" id="dabad1fd-dda9-499b-86a6-d35c0ee90510" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="${#TestSuite#AccessToken}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>http://rest-api.upskills.in</con:endpoint><con:request/><con:originalUri>http://rest-api.upskills.in/api/rest_admin/logout</con:originalUri><con:assertion type="GroovyScriptAssertion" id="1e417371-555e-47b3-8007-26a0b49c6be1" name="Script Assertion for status code"><con:configuration><scriptText>def httpStatus = messageExchange.responseHeaders["#status#"]
+def httpStatusCode = (httpStatus =~ "[1-5]\\d\\d")[0]
+log.info("HTTP status code: " + httpStatusCode)
+def condition = httpStatusCode.equals("200")
+
+assert condition</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="861f0f44-ba01-4370-91f5-42f040be18dc" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TC008_Add new customer and modify" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="GetAccessToken" id="f183f035-1ed4-4a10-aaca-a4d8b2cc9169"><con:settings/><con:config service="http://rest-api.upskills.in" resourcePath="/api/rest_admin/oauth2/token/client_credentials" methodName="GetAccessToken" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="GetAccessToken" id="9d8da129-cfb8-4edb-ac68-ef1fe08bbd5d" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="Basic dXBza2lsbHNfcmVzdF9hZG1pbl9vYXV0aF9jbGllbnQ6dXBza2lsbHNfcmVzdF9hZG1pbl9vYXV0aF9zZWNyZXQ=" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>http://rest-api.upskills.in</con:endpoint><con:request/><con:originalUri>http://rest-api.upskills.in/api/rest_admin/oauth2/token/client_credentials</con:originalUri><con:assertion type="GroovyScriptAssertion" id="872d2ad6-7396-4686-bfd1-49e1da49ae16" name="Script Assertion"><con:configuration><scriptText>import groovy.json.JsonSlurper
+
+def response = messageExchange.response.responseContent
+
+def jsonData = new JsonSlurper().parseText(response)
+
+def accessToken = jsonData.data.access_token
+
+def completeAccessToken = "bearer "+accessToken
+
+log.info completeAccessToken
+
+context.testCase.testSuite.setPropertyValue("AccessToken",completeAccessToken)</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Login" id="157f6142-3af9-4ec8-b27d-d674a027986a"><con:settings/><con:config service="http://rest-api.upskills.in" resourcePath="/api/rest_admin/login" methodName="Login" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Login" id="205d9fb2-3d60-4bf7-9da8-b70c8b0091ff" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="${#TestSuite#AccessToken}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>http://rest-api.upskills.in</con:endpoint><con:request>{
+  "username": "upskills_admin",
+  "password": "Talent4$$"
+}</con:request><con:originalUri>http://rest-api.upskills.in/api/rest_admin/login</con:originalUri><con:assertion type="GroovyScriptAssertion" id="84b025c1-f482-4160-80a2-99d96c353fc2" name="Script Assertion"><con:configuration><scriptText>def httpStatus = messageExchange.responseHeaders["#status#"]
+def httpStatusCode = (httpStatus =~ "[1-5]\\d\\d")[0]
+log.info("HTTP status code: " + httpStatusCode)
+def condition = httpStatusCode.equals("200")
+
+assert condition
+
+
+</scriptText></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="b625669b-020e-44cc-84d2-637795fdc24b" name="Script Assertion for username"><con:configuration><scriptText>import groovy.json.JsonSlurper
+
+def response = messageExchange.response.responseContent
+
+def jsonData = new JsonSlurper().parseText(response)
+
+def userName = jsonData.data.username
+
+log.info ("Admin username is: "+userName)
+
+def condition = userName.equals("upskills_admin")
+
+assert condition
+</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="properties" name="Properties" id="d6e4a1ad-c66c-413e-8b1d-0140ff6a8432"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>firstname</con:name><con:value>gskajfgdf12345</con:value></con:property><con:property><con:name>lastname</con:name><con:value>kgsdhgadg</con:value></con:property><con:property><con:name>email</con:name><con:value>ewfkhjferf1234@gmail.com</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="restrequest" name="Add new customer" id="e389a957-f832-4265-bc69-803227f9c6c0"><con:settings/><con:config service="http://rest-api.upskills.in" resourcePath="/api/rest_admin/customers" methodName="Add New customer" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Add new customer" id="e0dfda54-1558-46de-a732-975dadc9d287" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="${#TestSuite#AccessToken}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>http://rest-api.upskills.in</con:endpoint><con:request>{
+"firstname": "${Properties#firstname}",
+"lastname": "${Properties#lastname}",
+"email": "${Properties#email}",
+"password": "password",
+"confirm": "password", 
+"telephone": "1-541-754-3010"
+}</con:request><con:originalUri>http://rest-api.upskills.in/api/rest_admin/customers</con:originalUri><con:assertion type="GroovyScriptAssertion" id="4341d8b5-5113-472b-90e6-3b0ed4006762" name="Script Assertion"><con:configuration><scriptText>import com.eviware.soapui.support.XmlHolder
+def holder = new XmlHolder(messageExchange.responseContentAsXml)
+def customerID=holder.getNodeValue("//*:id")
+log.info "Customer ID of new added customer is: "+customerID
+context.testCase.testSuite.project.setPropertyValue("CustomerID",customerID)</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="Groovy Script to fetch cust id" id="5914abd3-01d0-4671-89c1-e39e2f508c98" disabled="true"><con:settings/><con:config><script>import com.eviware.soapui.support.XmlHolder
+def holder = new XmlHolder(messageExchange.responseContentAsXml)
+def customerID=holder.getNodeValue("//*:id")
+log.info "Customer ID of new added customer is: "+customerID
+context.testCase.testSuite.project.setPropertyValue("CustomerID",customerID)</script></con:config></con:testStep><con:testStep type="restrequest" name="Get Customer by ID" id="21011d05-93ad-4029-8824-ae7c02d61516"><con:settings/><con:config service="http://rest-api.upskills.in" resourcePath="/api/rest_admin/customers/${#Project#CustomerID}" methodName="GetCustomerByID" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Get Customer by ID" id="0df27849-94b9-4f9c-b3bb-7156257412fe" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="${#TestSuite#AccessToken}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>http://rest-api.upskills.in</con:endpoint><con:request/><con:originalUri>http://rest-api.upskills.in/api/rest_admin/customers/3733</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Modify customer by ID" id="4c20051f-048a-480d-8c74-5ba10982b3a4"><con:settings/><con:config service="http://rest-api.upskills.in" resourcePath="/api/rest_admin/customers/${#Project#CustomerID}" methodName="ModifyCustomerByID" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Modify customer by ID" id="63b60fcf-29bf-44e8-ba34-44f3212bbae7" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="${#TestSuite#AccessToken}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>http://rest-api.upskills.in</con:endpoint><con:request>{
+"firstname": "Demo66687878",
+"lastname": "${Properties#lastname}",
+"email": "${Properties#email}",
+"password": "password",
+"confirm": "password", 
+"telephone": "1-541-754-3010"
+}</con:request><con:originalUri>http://rest-api.upskills.in/api/rest_admin/customers/3733</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Get Customer by ID after modification" id="bec4f3cd-7a9e-4342-a456-07110474eeaf"><con:settings/><con:config service="http://rest-api.upskills.in" resourcePath="/api/rest_admin/customers/${#Project#CustomerID}" methodName="GetCustomerByID" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Get Customer by ID after modification" id="0df27849-94b9-4f9c-b3bb-7156257412fe" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="${#TestSuite#AccessToken}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>http://rest-api.upskills.in</con:endpoint><con:request/><con:originalUri>http://rest-api.upskills.in/api/rest_admin/customers/3733</con:originalUri><con:assertion type="GroovyScriptAssertion" id="d62ebb8b-b38e-4085-ad8a-a319382acbba" name="Script Assertion for status code"><con:configuration><scriptText>def httpStatus = messageExchange.responseHeaders["#status#"]
+def httpStatusCode = (httpStatus =~ "[1-5]\\d\\d")[0]
+log.info("HTTP status code: " + httpStatusCode)
+def condition = httpStatusCode.equals("200")
+
+assert condition</scriptText></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="2dd836a1-78e0-40fd-b7a0-3e121e64521e" name="Script Assertion for customer_id" disabled="true"><con:configuration><scriptText>import groovy.json.JsonSlurper
+
+def response = messageExchange.response.responseContent
+
+def jsonData = new JsonSlurper().parseText(response)
+
+def customerID = jsonData.data.customer_id
+
+log.info ("CustomerID is: "+customerID)
+
+def condition = customerID.equals('${#Project#CustomerID}')
+
+assert condition
+</scriptText></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="66b3e693-21f5-4b41-9b1c-2003994d32d6" name="Script Assertion for firstname"><con:configuration><scriptText>import groovy.json.JsonSlurper
+
+def response = messageExchange.response.responseContent
+
+def jsonData = new JsonSlurper().parseText(response)
+
+def firstName = jsonData.data.firstname
+log.info ("Firstname is: "+firstName)
+
+def condition = firstName.equals('Demo66687878')
+
+assert condition
+</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="a9af12dc-bd48-4fd1-874c-36b05226c6e8" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TC004_Data driven testing" searchProperties="true"><con:settings/><con:testStep type="groovy" name="Groovy Script" id="538ad116-7817-47f9-b733-89f88b49c0a6"><con:settings/><con:config><script>import jxl.*
+import com.eviware.soapui.model.testsuite.TestRunner.Status
+
+def tc=context.testCase.testSuite.project.testSuites["RestProjectAssignment"].testCases["TC008_Add new customer and modify"]
+
+File myfile= new File("D:\\API testing\\RestAssignment_Gunjit\\my-app\\customer.xls")
+Workbook wb = Workbook.getWorkbook(myfile)
+Sheet sh= wb.getSheet("Sheet1")
+int rc=sh.getRows();
+log.info "total number of rows containing data are $rc"
+for(int i=1;i&lt;rc;i++)
+{
+    def firstname=sh.getCell(0,i).getContents()
+    def lastname=sh.getCell(1,i).getContents()
+    def email=sh.getCell(2,i).getContents()
+    //log.info "current username is $username"
+    //log.info "current password is $password"
+    tc.testSteps["Properties"].setPropertyValue("firstname",firstname)
+    tc.testSteps["Properties"].setPropertyValue("lastname",lastname)
+    tc.testSteps["Properties"].setPropertyValue("email",email)
+    
+    def runner=tc.run(null,false)
+    log.info "Status =$runner.status, time taken to complete the execution is $runner.timeTaken ms"
+    log.info "number of test steps executed are "+runner.results.size()
+}</script></con:config></con:testStep><con:properties/></con:testCase><con:properties><con:property><con:name>AccessToken</con:name><con:value>bearer d7bffd81f07a71cb55e44119ed5092565f9a450b</con:value></con:property><con:property><con:name>CustomerID</con:name><con:value>3733</con:value></con:property></con:properties></con:testSuite><con:properties><con:property><con:name>CustomerID</con:name><con:value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">3780</con:value></con:property></con:properties><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>
